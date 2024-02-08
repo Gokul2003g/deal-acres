@@ -7,18 +7,12 @@ module.exports = {
   ],
   theme: {
     colors: {
+      ...require("tailwindcss/colors"), // Include default Tailwind CSS colors
       mainBlue: "#0061DF",
       lightBlue: "#D4E5FB",
-      white: "#FFFFFF",
       darkblue: "#99C5FF",
     },
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
