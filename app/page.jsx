@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col justify-center items-center h-full md:flex-row md:px-36 md:py-8 py-4 gap-x-16">
-        <div className="border-lightBlue border-8 max-w-xl border-r-0 border-b-2 from-[#D4E5FB] to-[#FAEFFE] rounded-2xl p-4 mb-8">
+        <div className="border-lightBlue border-8 max-w-xl border-r-0 border-b-2 rounded-2xl p-4 mb-8">
           <FormHeading text={"Post Your property for free"} />
           <span className="block font-normal">Add Basic Detail</span>
           <FormSubHeading text={"Looking For......."} />
