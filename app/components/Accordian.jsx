@@ -14,7 +14,7 @@ const Accordian = ({ text }) => {
       <h1 className="text-2xl pl-4 leading-normal inline font-semibold">
         {text}
       </h1>
-      <hr className="opacity-20" />
+      <hr className="opacity-100" />
     </div>
   );
 };

@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center pt-16 ">
           <Image
-            src="/sofas-living-room-half.png"
+            src="/sofas-living-room.jpg"
             alt="living room"
             width={1920}
             height={500}

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import FormHeading from "../components/FormHeading";
 import OTPBox from "../components/OTPBox";
 import LargeButton from "../components/LargeButton";
 import LargeButton2 from "../components/LargeButton2";
