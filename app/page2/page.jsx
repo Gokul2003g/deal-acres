@@ -7,7 +7,7 @@ import LargeButton2 from "../components/LargeButton2";
 const page = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-32">
-      <div className="bg-lightPink flex flex-col items-center justify-center rounded-3xl max-w-md pt-16 px-8 md:py-36 md:my-8">
+      <div className="bg-lightPink flex flex-col items-center justify-center rounded-3xl max-w-md pt-16 px-8 md:py-36 py-12 md:my-8">
         <div className="flex flex-row">
           <Image
             className="inline-block"
