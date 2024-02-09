@@ -44,7 +44,9 @@ export default function Home() {
             <span>Are you Registered User?</span>
             <span className="text-mainBlue cursor-pointer px-2">Login</span>
           </div>
-          <LargeButton text={"Start Now"} />
+          <a href="/page2">
+            <LargeButton text={"Start Now"} />
+          </a>
         </div>
         <div className="bg-lightBlue rounded-3xl max-w-lg pt-16 px-8 md:py-8">
           <div className="flex md:flex-row flex-col py-4 pb-8">
