@@ -63,11 +63,9 @@ const page = () => {
             width={100}
           />
         </div>
-        <div className="w-1/4">
-          <button className="w-full cursor-pointer bg-mainBlue text-5xl font-bold py-2 flex justify-center items-center rounded-2xl text-white">
-            Submit
-          </button>
-        </div>
+        <button className="cursor-pointer bg-mainBlue text-5xl font-bold py-2 px-4 rounded-2xl text-white">
+          Submit
+        </button>
       </div>
     </div>
   );
