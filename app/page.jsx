@@ -72,7 +72,7 @@ export default function Home() {
         <span className="text-4xl font-extrabold pb-16 px-8">
           Step by Step Guide for Free Property Listing
         </span>
-        <div className="flex flex-col md:flex-row gap-16 px-8">
+        <div className="flex flex-col md:flex-row gap-16 px-8 mx-auto">
           <GuideBlocks
             img={"/guide1.png"}
             heading={"Step 1: Add Property Detail"}
