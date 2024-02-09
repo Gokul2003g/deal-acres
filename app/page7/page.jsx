@@ -243,7 +243,9 @@ const page = () => {
           dealacres.com. If you have any queries contact Deal Acres at
           contact@dealacres.com.
         </div>
-        <LargeButton text="Post Property" />
+        <a href="/page8">
+          <LargeButton text="Post Property" />
+        </a>
       </div>
     </div>
   );
