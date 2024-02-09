@@ -1,6 +1,6 @@
 import React from "react";
 
-const CheckBox = ({ id, text }) => {
+const FilledCheckBox = ({ id, text }) => {
   return (
     <div className="pr-4 py-2 inline-flex">
       <input
@@ -12,7 +12,7 @@ const CheckBox = ({ id, text }) => {
       />
       <label
         for={id}
-        className="inline-flex items-center text-lg justify-between border-lightBlue cursor-pointer  border-4 rounded-lg py-1 px-8 peer-checked:border-mainBlue"
+        className="inline-flex items-center text-xl justify-between bg-lightPurple cursor-pointer  border-4 rounded-lg py-1 px-8 peer-checked:border-mainBlue"
       >
         {text}
       </label>
@@ -20,4 +20,4 @@ const CheckBox = ({ id, text }) => {
   );
 };
 
-export default CheckBox;
+export default FilledCheckBox;

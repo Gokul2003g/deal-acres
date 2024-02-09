@@ -12,7 +12,7 @@ const SecondaryCheckBox = ({ id, text }) => {
       />
       <label
         for={id}
-        className="inline-flex items-center justify-between border-lightBlue cursor-pointer peer-checked:border-blue-600 border-2 text-sm rounded-lg py-1 px-4 peer-checked:border-mainBlue"
+        className="inline-flex items-center justify-between border-lightBlue cursor-pointer  border-2 text-sm rounded-lg py-1 px-4 peer-checked:border-mainBlue"
       >
         {text}
       </label>
