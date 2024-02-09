@@ -45,7 +45,7 @@ const page = () => {
             <div class="relative my-2">
               <input
                 type="text"
-                class="pl-16 w-3/4 pr-4 py-4 border-4 text-xl placeholder:text-black border-lightBlue rounded-lg"
+                class="pl-16 w-2/4 pr-4 py-4 border-4 text-xl placeholder:text-black border-lightBlue rounded-lg"
                 placeholder="Price per Sq.Yd."
               />
               <div
