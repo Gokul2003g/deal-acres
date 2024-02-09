@@ -78,10 +78,10 @@ const page = () => {
             </div>
             <FormSubHeading text={"Age of Property"} />
             <div className="flex flex-row pb-4">
-              <SecondaryCheckBox id={1} text={"0-1 Years"} />
-              <SecondaryCheckBox id={2} text={"1-5 Years"} />
-              <SecondaryCheckBox id={3} text={"5-10 Years"} />
-              <SecondaryCheckBox id={4} text={"10+ Years"} />
+              <SecondaryCheckBox id={121} text={"0-1 Years"} />
+              <SecondaryCheckBox id={221} text={"1-5 Years"} />
+              <SecondaryCheckBox id={331} text={"5-10 Years"} />
+              <SecondaryCheckBox id={441} text={"10+ Years"} />
             </div>
             <a href="/page6">
               <LargeButton text="Continue" />
