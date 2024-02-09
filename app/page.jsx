@@ -134,7 +134,7 @@ export default function Home() {
           List Your Property for FREE NOW!
         </button>
       </div>
-      <div className="flex flex-col px-12 md:px-64 ">
+      <div className="flex flex-col px-12 lg:px-64 ">
         <h1 className="text-5xl font-bold leading-normal pb-4">
           Everything you need to know about Deal Acres FREE Property Listing...
         </h1>
@@ -198,7 +198,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold leading-normal pb-4">
             Interesting Reads
           </h1>
-          <div className="flex flex-col sm:flex-row gap-8 py-4">
+          <div className="flex flex-row flex-wrap gap-4 py-4">
             <ReadsCard
               img={"/reads1.png"}
               heading={"Top 10 Best Schools in Gurgaon for Admission &..."}

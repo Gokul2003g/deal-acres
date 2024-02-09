@@ -12,7 +12,7 @@ const FilledCheckBox = ({ id, text }) => {
       />
       <label
         for={id}
-        className="inline-flex items-center text-xl justify-between bg-lightPurple cursor-pointer  border-4 rounded-lg py-1 px-8 peer-checked:border-mainBlue"
+        className="inline-flex items-center text-xl justify-between bg-lightPurple cursor-pointer  border-4 border-lightPurple rounded-lg py-1 px-8 peer-checked:border-mainBlue"
       >
         {text}
       </label>

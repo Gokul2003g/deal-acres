@@ -4,7 +4,6 @@ import FormHeading from "../components/FormHeading";
 import FormSubHeading from "../components/FormSubHeading";
 import LargeButton from "../components/LargeButton";
 import Image from "next/image";
-import Input from "../components/Input";
 import NormalCheckbox from "../components/NormalCheckbox";
 import CheckBox from "../components/CheckBox";
 
@@ -19,17 +18,17 @@ const page = () => {
           status4={true}
           status5={false}
         />
-        <div className="flex flex-col lg:flex-row items-center justify-center pt-16 gap-32">
-          <div className="border-lightBlue border-8 max-w-2xl rounded-2xl p-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start justify-center pt-16 gap-16 w-11/12 sm:gap-32">
+          <div className="border-lightBlue border-8 max-w-2xl w-11/12 sm:w-auto rounded-2xl p-8">
             <FormHeading text={"Price Details"} />
-            <div class="relative my-2">
+            <div className="relative my-2">
               <input
                 type="text"
-                class="pl-16 p-32 pr-4 py-4 border-4 text-xl placeholder:text-black placeholder:opacity-100  border-lightBlue rounded-lg"
+                className="pl-16 w-11/12 sm:w-fill pr-4 py-4 border-4 text-sm sm:text-xl placeholder:text-black placeholder:opacity-100  border-lightBlue rounded-lg"
                 placeholder="Expected Price"
               />
               <div
-                class="absolute inset-y-0 left-0 pl-3  
+                className="absolute inset-y-0 left-0 pl-3  
                     flex items-center  
                     pointer-events-none"
               >
@@ -42,14 +41,14 @@ const page = () => {
                 />
               </div>
             </div>
-            <div class="relative my-2">
+            <div className="relative my-2">
               <input
                 type="text"
-                class="pl-16 w-2/4 pr-4 py-4 border-4 text-xl placeholder:text-black border-lightBlue rounded-lg"
+                className="pl-16 w-11/12 sm:w-auto pr-4 py-4 border-4 text-sm sm:text-xl placeholder:text-black border-lightBlue rounded-lg"
                 placeholder="Price per Sq.Yd."
               />
               <div
-                class="absolute inset-y-0 left-0 pl-3  
+                className="absolute inset-y-0 left-0 pl-3  
                     flex items-center  
                     pointer-events-none"
               >
@@ -68,8 +67,8 @@ const page = () => {
               <NormalCheckbox id="tax" text="Tax and Govt. Charges Excluded" />
             </div>
             <FormHeading text={"Add Amenties and Features"} />
-            <div className="flex flex-row">
-              <div className="flex flex-col">
+            <div className="flex flex-row flex-wrap">
+              <div className="flex flex-col flex-wrap">
                 <NormalCheckbox text="Aerobics Room" id="aerobics" />
                 <NormalCheckbox text="Air Conditioning" id="Barbeque Pit" />
                 <NormalCheckbox text="Amphitheatre" id="amphitheatre" />
@@ -176,10 +175,10 @@ const page = () => {
             </div>
             <FormHeading text={"Upload Floor Plan"} />
             <div className="flex items-center justify-center">
-              <div className="bg-lightPink flex flex-col items-center w-full justify-center h-60 my-8 p-8 min-w-64 rounded-3lg">
+              <div className="bg-lightPink flex flex-col items-center justify-center w-auto h-auto my-8 p-8  rounded-3lg">
                 <Image src="/cloud.png" alt="add" width={100} height={100} />
                 <FormSubHeading text={"Drag & Drop Image Here"} />
-                <p>Uploaded photo is maximum is of 2MB</p>
+                <p>Uploaded photo is maximum is of 5MB</p>
                 <butotn className="px-4 mt-4 cursor-pointer bg-mainBlue text-xl font-semibold py-2 flex justify-center items-center rounded-lg text-white">
                   Upload Media
                 </butotn>
@@ -190,48 +189,46 @@ const page = () => {
             </a>
           </div>
 
-          <div className="flex flex-col">
-            <div className="bg-lightBlue flex flex-col items-center justify-center rounded-3xl max-w-lg md:px-24 md:py-28 ">
-              <div className="flex flex-row">
-                <span className="text-2xl pl-4 ">
-                  <ul className="list-disc">
-                    <li className="text-3xl">
-                      Mention attractive amenities and appealing details of your
-                      property.
-                    </li>
-                    <li className="text-3xl">
-                      Add property proximity to transit Shopping, Market Areas,
-                      and more..
-                    </li>
-                  </ul>
-                </span>
-              </div>
-              <Image
-                src="/page7.png"
-                alt="ad"
-                width={250}
-                height={250}
-                className="py-16"
-              />
-              <h1 className="font-semibold text-2xl">Need Help?</h1>
-              <p className="text-2xl font-normal">You Can Email Us</p>
-              <a
-                href="mailto:contact@dealacres.com"
-                className="text-2xl link text-blue-600"
-              >
-                contact@dealacres.com
-              </a>
+          <div className="bg-lightBlue flex flex-col items-center justify-center w-11/12 rounded-3xl max-w-lg md:px-24 md:py-28 py-16 px-12">
+            <div className="flex flex-row">
+              <span className="text-2xl pl-4 ">
+                <ul className="list-disc">
+                  <li className="text-2xl sm:text-3xl">
+                    Mention attractive amenities and appealing details of your
+                    property.
+                  </li>
+                  <li className="text-2xl sm:text-3xl">
+                    Add property proximity to transit Shopping, Market Areas,
+                    and more..
+                  </li>
+                </ul>
+              </span>
             </div>
+            <Image
+              src="/page7.png"
+              alt="ad"
+              width={250}
+              height={250}
+              className="py-16"
+            />
+            <h1 className="font-semibold text-2xl">Need Help?</h1>
+            <p className="text-2xl font-normal">You Can Email Us</p>
+            <a
+              href="mailto:contact@dealacres.com"
+              className="text-lg sm:text-2xl link text-blue-600"
+            >
+              contact@dealacres.com
+            </a>
           </div>
         </div>
       </div>
-      <div className="flex flex-col max-w-7xl justify-center mx-auto py-16">
+      <div className="flex flex-col max-w-7xl justify-center w-11/12 mx-auto py-16">
         <FormHeading text={"GDPR Agreement *"} />
         <NormalCheckbox
           id="gdpr"
           text='I agree to this website "Deal Acres" storing my submitted information; see more details below.'
         />
-        <div className="bg-lightPink text-2xl rounded-lg p-4 mb-16">
+        <div className="bg-lightPink text-xl sm:text-2xl rounded-lg p-4 mb-16">
           The data based on a search query on Deal Acres has been made available
           for information/advertisement purposes. No warranty is implied for its
           accuracy. Nothing contained herein will be deemed to constitute any
